@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* General Styles */
+body {
+    background: linear-gradient(to bottom right, #2c3e50, #34495e); /* Dark blue gradient */
+    color: #ecf0f1; /* Light text color */
+    font-family: 'Arial', sans-serif; /* Clean sans-serif font */
+    text-align: center; /* Center align text */
+    margin: 0; /* Remove default margin */
+    padding: 50px; /* Padding around the body */
+}
+
+/* Header Style */
+h1 {
+    color: #1abc9c; /* Teal color for header */
+    font-size: 2.5em; /* Larger font size */
+    margin-bottom: 20px; /* Space below header */
+}
+
+/* Input Field Styles */
+input {
+    padding: 12px; /* Padding for input */
+    font-size: 16px; /* Font size for input */
+    border: none; /* No border */
+    border-radius: 30px; /* Fully rounded */
+    width: 250px; /* Fixed width for input */
+    transition: box-shadow 0.3s; /* Transition for box-shadow */
+    outline: none; /* Remove default outline */
+}
+
+input:focus {
+    box-shadow: 0 0 5px #1abc9c; /* Teal shadow on focus */
+}
+
+/* Button Styles */
+button {
+    background: #1abc9c; /* Teal background */
+    border: none; /* No border */
+    border-radius: 30px; /* Fully rounded */
+    padding: 12px 25px; /* Padding for button */
+    font-size: 16px; /* Font size for button */
+    color: white; /* White text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #16a085; /* Darker teal on hover */
+    transform: scale(1.05); /* Slight scaling effect */
+}
+
+/* Weather Info Styles */
+.weather-info {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px; /* Padding inside the weather info box */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Strong shadow */
+    margin-top: 20px; /* Space above weather info */
+    opacity: 0; /* Start hidden */
+    transition: opacity 0.5s ease-in; /* Smooth fade-in transition */
+    line-height: 35px;
+}
+
+.weather-info.show {
+    opacity: 1; /* Fade in effect */
+}
+
+/* Weather Icon Style */
+.weather-info img {
+    width: 80px; /* Width of weather icon */
+    margin-bottom: 10px; /* Space below the icon */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    body {
+        padding: 20px; /* Less padding on smaller screens */
+    }
+
+    input {
+        width: 100%; /* Full width input on small screens */
+    }
+
+    button {
+        width: 100%; /* Full width button on small screens */
+    }
+}
